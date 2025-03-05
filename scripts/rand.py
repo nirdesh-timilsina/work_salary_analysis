@@ -65,6 +65,6 @@ def plot(file_address1,file_address_2,file_address3,year):
     plt.show()
 
 
-
+#plot('data/2018/Earning2018.csv','data/2018/employePopn2018.csv','data/2018/workinghr2018.csv','2018')
 plot('data/2008/Earning2008.csv','data/2008/employePopn2008.csv','data/2008/workinghr2008.csv','2008')
 plot('data/1998/Earning1998.csv','data/1998/employePopn1998.csv','data/1998/workinghr1998.csv','1998')

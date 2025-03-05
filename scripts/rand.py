@@ -1,6 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt 
 import numpy as np
+
+#to merge all datasets for visualization and comparision purpose
 def plot(file_address1,file_address_2,file_address3,year):
     df1 = pd.read_csv(file_address1)
     df2 = pd.read_csv(file_address_2)
@@ -11,16 +13,8 @@ def plot(file_address1,file_address_2,file_address3,year):
                         'total_pop', 'male_pop', 'female_pop',
                         'total_wor', 'male_wor', 'female_wor']
     merged_df.set_index('Occupation',inplace=True)
-    merged_df
-    merged_df['total_ear'][0]
-    # def Zscore_normalize (df, columns):
-    #     normalized_df = df.copy()
-    #     for column in columns:
-    #         mean = df[column].mean()
-    #         std = df[column].std()
-    #         normalized_df[column] = (df[column]-mean)/std
-    #         return normalized_df
 
+   
     def Zscore_normalize(df, columns):
         normalized_df = df.copy()
         for column in columns:
@@ -64,7 +58,7 @@ def plot(file_address1,file_address_2,file_address3,year):
     plt.title("Employe Chat "+ year)
     plt.show()
 
-
+#employee population of 2018 needs to be found for proper implementation 
 #plot('data/2018/Earning2018.csv','data/2018/employePopn2018.csv','data/2018/workinghr2018.csv','2018')
 plot('data/2008/Earning2008.csv','data/2008/employePopn2008.csv','data/2008/workinghr2008.csv','2008')
 plot('data/1998/Earning1998.csv','data/1998/employePopn1998.csv','data/1998/workinghr1998.csv','1998')

@@ -66,7 +66,7 @@ Ensure the following Python packages are installed (as listed in `requirements.t
 - seaborn
 - jupyter
 
-*Note: The exact versions can be found in the `requirements.txt` file.*
+
 
 ##  Contributing
 
